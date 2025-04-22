@@ -13,7 +13,7 @@ namespace StockMarket.Services
 
         public CompanyService(IConfiguration configuration)
         {
-            _connectionString = configuration.GetConnectionString("DefaultConnection");
+            _connectionString = configuration.GetConnectionString("StockMarketAPI");
         }
 
         public async Task<List<Company>> GetAllAsync()
